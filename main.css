@@ -25,9 +25,7 @@ ul {
   background-color: rgb(10, 10, 10);
 }
 
-li {
-  float: left;
-}
+
 
 li a {
   display: block;
@@ -226,11 +224,21 @@ li a:hover {
     filter: url(#noise);
   }
   
-  @media(max-width: 768px) {
+@media(max-width: 768px) {
     #card {
       width: 100%;
     }
-  }
+    #me{
+        margin-left:0;
+        margin-right:0;
+    }
+}
+
+@media (min-width:1024px) {
+    li {
+        float: left;
+    }
+}
   
   *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
