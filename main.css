@@ -1,0 +1,249 @@
+
+
+:root {  
+    --purple: rgb(31, 155, 162);
+    --violet: rgb(58, 98, 183);
+    --pink: rgb(158, 143, 244);
+    --green: rgb(203, 144, 49);
+    --green-dark: rgb(156, 72, 46);
+    --yellow: rgb(213, 202, 51);
+    --green-v2: rgb(111, 219, 187);
+    --green-dark-v2: rgb(46, 172, 69);
+    --green-light: rgb(165, 205, 71);
+  }
+.navbar{
+  display:flex;
+}
+ul {
+  font-family: "Rubik", sans-serif;
+  font-size:1.6em;
+ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(10, 10, 10);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-top:0.5em;
+  margin-left:2em ;
+  margin-right: 2em;
+  padding: 0.9rem 1.3rem;
+  text-decoration: none;
+}
+.magic-text-v2{
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--green),
+    var(--green-dark),
+    var(--yellow),
+    var(--green)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+.magic-text-v3{
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--green-v2),
+    var(--green-dark-v2),
+    var(--green-light),
+    var(--green-v2)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+
+li a:hover {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+
+
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  @keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  body {
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    place-items: center;
+  }
+  .main{
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    height: 80vh;
+    margin: 0px;
+    overflow: hidden;
+    place-items: center;
+  }
+.spacing{
+  margin: 3.14%;
+}
+  h1 {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(2em, 2vw, 4em);
+    font-weight: 400;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  h1 > .magic {
+    display: inline-block;
+    position: relative;
+  }
+  
+  h1 > .magic > .magic-star {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    animation: scale 700ms ease forwards;
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+  }
+  
+  h1 > .magic > .magic-star > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  h1 > .magic > .magic-star > svg > path {
+    fill: var(--violet);
+  }
+  
+  h1 > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+  
+  
+  
+  @keyframes pulse {
+    from, to {
+      scale: 1;
+    }
+    
+    50% {
+      scale: 1.08;
+    }
+  }
+  
+  #card {
+    width: 580px;
+    aspect-ratio: 2 / 3;
+    /*border: 0.25rem solid rgb(255 255 255 / 15%);*/
+    border-radius: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  #card > img {  
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+  
+  #card:hover > img {
+    animation: pulse 800ms ease-in-out;
+    filter: url(#noise);
+  }
+  
+  @media(max-width: 768px) {
+    #card {
+      width: 100%;
+    }
+  }
+  
+  *::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 0;
+  background-clip: padding-box;
+  border: 0;
+  color: rgb(10, 10, 10);
+}
+
+*::-webkit-scrollbar-thumb {        
+  box-shadow: 0;
+  background-color: rgb(10, 10, 10);
+}
+
+div:hover {
+  color: rgb(10, 10, 10);
+}
+
