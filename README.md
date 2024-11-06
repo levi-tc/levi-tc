@@ -34,4 +34,3 @@ I'm a **Software Engineer** and **Computer Science student** at POLITEHNICA Univ
 ## 🌌 Let's Connect!
 
 📧 **Email:** [peter.whzm@gmail.com](mailto:peter.whzm@gmail.com)  
-📞 **Phone:** +40 750 425 390  
