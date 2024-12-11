@@ -26,10 +26,7 @@ interface Props {
   variant?: 'default' | 'blue' | 'green'
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  dark: false,
-  variant: 'default'
-})
+defineProps<Props>()
 
 const background = ref<HTMLElement | null>(null)
 const isHovered = ref(false)
