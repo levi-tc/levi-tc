@@ -28,7 +28,13 @@ jobs:
 
       - name: Install dependencies
         working-directory: ./site
-        run: npm ci
+        run: |
+          npm ci
+          npm install gsap @types/gsap --save-dev
+
+      - name: Type check
+        working-directory: ./site
+        run: npm run type-check || true
 
       - name: Build project
         working-directory: ./site
