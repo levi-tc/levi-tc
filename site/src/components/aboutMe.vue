@@ -20,22 +20,30 @@
 
     <!-- Right side - Content -->
     <div class="w-full lg:w-1/2 text-white px-4 lg:pr-[5%] lg:pl-0">
-      <h2 class="archivo-black text-3xl sm:text-4xl mb-6 fade-in-slide" ref="title">
-        About Me
-      </h2>
-      
-      <div class="space-y-4 sm:space-y-6">
-        <p class="archivo text-base sm:text-lg text-gray-300 leading-relaxed fade-in-slide" ref="text1">
-          Hello! I'm [Your Name], a passionate developer and creator with a keen interest in building 
-          digital experiences that make a difference.
-        </p>
+  <h2 class="archivo-black text-3xl sm:text-4xl mb-6 fade-in-slide" ref="title">
+    About Me
+  </h2>
+  
+  <div class="space-y-4 sm:space-y-6">
+    <p class="archivo text-base sm:text-lg text-gray-300 leading-relaxed fade-in-slide" ref="text1">
+      Hey there! I’m <strong>Petrișor Huzum</strong>, a driven <strong>Software Engineer</strong> and 
+      <strong>Computer Science student</strong> at POLITEHNICA University, Bucharest. I’m all about 
+      crafting digital experiences that are both seamless and impactful—whether it’s building a 
+      high-performing web application, streamlining data analysis, or experimenting with machine 
+      learning models.
+    </p>
 
-        <p class="archivo text-base sm:text-lg text-gray-300 leading-relaxed fade-in-slide" ref="text2">
-          I specialize in full-stack development, with a particular focus on creating intuitive and 
-          performant web applications. My journey in tech started with [your story here].
-        </p>
-      </div>
-    </div>
+    <p class="archivo text-base sm:text-lg text-gray-300 leading-relaxed fade-in-slide" ref="text2">
+      From pushing code in <strong>Django</strong> and <strong>React.js/Vue.js</strong> to optimizing workflows 
+      with <strong>Docker</strong> and championing web accessibility, my mission is to deliver 
+      solutions that don’t just meet user needs—they redefine what’s possible. I’ve used my skills 
+      to boost productivity, refine predictive models, and reshape the online shopping experience 
+      with SEO enhancements. In short, I love turning big ideas into robust, efficient, and 
+      human-centered technologies.
+    </p>
+  </div>
+</div>
+
   </section>
 </template>
 
