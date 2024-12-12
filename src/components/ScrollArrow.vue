@@ -6,13 +6,15 @@
   >
     <ChevronUpIcon
       v-if="isScrollingUp"
-      :class="['text-purple-500 w-10 h-10 transition-all duration-300 transform', 
+      :class="[' w-10 h-10 transition-all duration-300 transform', 
                { 'animate-bounce-limited': isArrowAnimating }]"
+      style="color: var(--accent-color)"
     />
     <ChevronDownIcon
       v-else
-      :class="['text-purple-500 w-10 h-10 transition-all duration-300 transform', 
+      :class="[' w-10 h-10 transition-all duration-300 transform', 
                { 'animate-bounce-limited': isArrowAnimating }]"
+    style="color: var(--accent-color)"
     />
   </div>
 </template>

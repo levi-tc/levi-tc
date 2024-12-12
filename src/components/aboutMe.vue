@@ -61,6 +61,7 @@
       target-section="#stats" 
       previous-section="#hero"
       class="bottom-6 sm:bottom-12"
+      style="color: var(--accent-color)"
     />
   </section>
 </template>

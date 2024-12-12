@@ -23,8 +23,14 @@
       </div>
     </div>
 
-    <ScrollArrow target-section="#projects" previous-section="#about-me" />
-  </section>
+
+<ScrollArrow class="absolute bottom-6 sm:bottom-12" target-section="#projects" previous-section="#about-me" />
+  
+    </section>
+
+    <!-- ScrollArrow component at the bottom of the page -->
+
+  
 </template>
 
 <script setup lang="ts">
