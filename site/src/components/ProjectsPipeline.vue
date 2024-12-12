@@ -195,4 +195,3 @@ span.fade-in-slide { transition-delay: 0.2s; }
   font-family: "Archivo Black", sans-serif;
 }
 </style> 
-</style> 
