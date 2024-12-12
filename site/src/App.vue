@@ -6,7 +6,7 @@
         <Hero />
         <AboutMe />
         <Stats />
-        <ProjectsPipeline />
+        <ProjectsPipeline :projects="projects" />
         <Footer />
       </div>
     </div>
@@ -22,8 +22,31 @@ import ProjectsPipeline from './components/ProjectsPipeline.vue'
 import Footer from './components/Footer.vue'
 import { provide, ref, onMounted } from 'vue'
 
-// Initialize theme from localStorage or default to dark
+interface Project {
+  title: string
+  description: string
+  technologies: string[]
+}
+
 const isDark = ref(localStorage.getItem('theme') === 'dark')
+
+const projects: Project[] = [
+  {
+    title: "Data & ML Projects",
+    description: "Advanced anomaly detection and prediction models implemented using MATLAB, focusing on data analysis and machine learning algorithms.",
+    technologies: ["MATLAB", "Python", "Data Analysis", "Machine Learning"]
+  },
+  {
+    title: "Interactive Image Processor",
+    description: "Developed efficient image editing tools in C, achieving a 30% reduction in memory usage while maintaining high performance.",
+    technologies: ["C", "Image Processing", "Memory Optimization", "Algorithms"]
+  },
+  {
+    title: "Leave Management System",
+    description: "Automated leave request system built with Django, reducing processing time by 40% and streamlining HR operations.",
+    technologies: ["Django", "Python", "PostgreSQL", "HTML/CSS"]
+  }
+]
 
 const toggleTheme = () => {
   isDark.value = !isDark.value
