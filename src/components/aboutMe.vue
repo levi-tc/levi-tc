@@ -15,7 +15,7 @@
         @click="handleClick"
       >
         <img 
-          :src="new URL('@/assets/images/aboutme.png' import.meta.url).href" 
+          :src="new URL('@/assets/images/aboutme.png', import.meta.url).href" 
           alt="Profile picture" 
           class="w-full h-full object-cover rounded-2xl"
           loading="lazy"
