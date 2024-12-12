@@ -1,22 +1,14 @@
-import vue from '@vitejs/plugin-vue'
-import autoprefixer from 'autoprefixer'
-import tailwindcss from 'tailwindcss'
 import { defineConfig } from 'vite'
-import { fileURLToPath, URL } from 'node:url'
+import vue from '@vitejs/plugin-vue'
+import path from 'path'
 
-
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   base: '/levi-tc/',
-  css: {
-    postcss: {
-      plugins: [tailwindcss(), autoprefixer()],
-    },
-  },
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@': path.resolve(__dirname, './src'),
     },
   },
 })
