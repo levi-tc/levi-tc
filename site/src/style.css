@@ -19,11 +19,8 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
-    @apply bg-black text-foreground;
+    @apply bg-black text-white;
   }
 
   /* Hide scrollbar on mobile */
