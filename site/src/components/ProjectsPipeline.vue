@@ -72,9 +72,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, inject } from 'vue'
+import { ref, onMounted, onUnmounted, inject } from 'vue'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+
+interface Project {
+  title: string
+  description: string
+  technologies: string[]
+}
+
+const props = defineProps<{
+  projects: Project[]
+}>()
 
 const { isDark } = inject('theme', { isDark: ref(true) })
 
