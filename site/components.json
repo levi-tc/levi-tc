@@ -5,8 +5,8 @@
   "tsConfigPath": "./tsconfig.json",
   "tailwind": {
     "config": "tailwind.config.js",
-    "css": "src/assets/index.css",
-    "baseColor": "neutral",
+    "css": "src/style.css",
+    "baseColor": "zinc",
     "cssVariables": true,
     "prefix": ""
   },
