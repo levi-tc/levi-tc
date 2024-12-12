@@ -15,7 +15,7 @@
         @click="handleClick"
       >
         <img 
-          src="/levi-tc/images/aboutme.png" 
+          :src="aboutMeImage" 
           alt="Profile picture" 
           class="w-full h-full object-cover rounded-2xl"
           loading="lazy"
@@ -68,6 +68,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import ScrollArrow from './ScrollArrow.vue'
+import aboutMeImage from '@/assets/images/aboutme.png'
 
 const imageContainer = ref<HTMLElement | null>(null)
 const isImageRevealed = ref(false)
