@@ -85,7 +85,7 @@ const title = ref<HTMLElement | null>(null)
 const projectRefs = ref<HTMLElement[]>([])
 const isDesktop = ref(false)
 
-const projects = [
+const projects: Project[] = [
   {
     title: "Data & ML Projects",
     description: "Advanced anomaly detection and prediction models implemented using MATLAB, focusing on data analysis and machine learning algorithms.",
@@ -116,8 +116,9 @@ onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1'
-        entry.target.style.transform = 'translateY(0)'
+        const element = entry.target as HTMLElement
+        element.style.opacity = '1'
+        element.style.transform = 'translateY(0)'
         observer.unobserve(entry.target)
       }
     })
@@ -193,4 +194,5 @@ span.fade-in-slide { transition-delay: 0.2s; }
 .archivo-black {
   font-family: "Archivo Black", sans-serif;
 }
+</style> 
 </style> 
