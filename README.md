@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Petrișor Huzum 
 
-### 🌍 Bucharest, Romania | [petrehz.me](https://petrehz.me)  
+### 🌍 Bucharest, Romania | 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue)](https://www.linkedin.com/in/petrisor-huzum) [![GitHub](https://img.shields.io/badge/-GitHub-gray)](https://github.com/levi-tc)
 
 I'm a **Software Engineer** and **Computer Science student** at POLITEHNICA University, Bucharest. My interests span **web development**, **data analysis**, and **machine learning**.
