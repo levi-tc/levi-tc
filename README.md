@@ -10,7 +10,7 @@ I'm a **Software Engineer** and **Computer Science student** at POLITEHNICA Univ
 ## 🛠️ Skills
 
 - **Languages:** C/C++, JavaScript, Python, PHP, MATLAB
-- **Frameworks & Tools:** Django, React.js, Node.js, Linux, Docker, WordPress, Shopify
+- **Frameworks & Tools:** Django, React.js, Node.js, Linux, Docker, WordPress, Shopify, and more
 
 ---
 
